@@ -1,0 +1,33 @@
+.recipient
+  .name.bold #{cl_data.company.contact_name}
+  .address #{cl_data.company.address}
+  .city #{cl_data.company.city}
+
+.date #{cl_data.date}
+
+.opening Dear Sir or Madam,
+
+.main-text
+  include:markdown-it tmp/content.md
+    
+  p I am curious and always looking for new knowledge to acquire; I really enjoy solving problems, this is for me one of the best aspects of engineering. Therefore, I am willing to learn a lot during this internship.
+
+.closing
+  p For further details about my skills and curriculum, I invite you to look at my resume.
+  p Yours sincelerely,
+  .name.bold #{name.first} #{name.last}
+
+.sender
+  .name.bold #{name.first} #{name.last}
+  .address
+    span.street #{address.street}
+    span.postcode #{address.postcode}
+    span.country #{address.country}
+  .contact
+    span.phone #{contact.phone}
+    span.email #{contact.email}
+    span.website #{contact.website}
+
+
+style
+  include:scss letter.scss
