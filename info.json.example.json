@@ -1,0 +1,16 @@
+{
+	"name": {
+		"first": "John",
+		"last": "Doe"
+	},
+	"contact": {
+		"phone": "+33 0 00 00 00 00",
+		"email": "john.doe@gmail.com",
+		"website": "www.johndoe.github.io"
+	},
+	"address": {
+		"street": "some address",
+		"postcode": "Montréal",
+		"country": "Canada"
+	}
+}
